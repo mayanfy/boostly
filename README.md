@@ -1,4 +1,4 @@
-# Bootpack
+# Boostly
 
 Initial package for the development of html sites with [Bootstrap](https://getbootstrap.com/) and [Webpack](https://webpack.js.org/)
 
@@ -14,9 +14,9 @@ Initial package for the development of html sites with [Bootstrap](https://getbo
 λ npm install
 ```
 
-## Correr aplicación
+## Run application
 
-* Mode watch: `λ npm run serv` _virtuales files(on memory)_
+* Mode watch: `λ npm run serv` _virtual files(on memory)_
 * Mode development: `λ npm run dev` _files generated in dist without minifying_
 * Mode production: `λ npm run prod` _files generated in dist minified_
 
