@@ -1,0 +1,25 @@
+//- Font a usar
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+//- Custom params for bootstrap
+$font-family-sans-serif: 'Roboto', sans-serif !default;
+  
+//- Get framework boostrap
+@import "~bootstrap/scss/bootstrap";
+
+//- Icons Font awesome v4.7
+$fa-font-path: '~font-awesome/fonts';
+@import '~font-awesome/scss/font-awesome';
+
+//- Icons Material icons
+$mdi-font-path: "~@mdi/font/fonts" !default;
+@import '~@mdi/font/scss/materialdesignicons';
+
+//- Transition efects
+@import '~aos/src/sass/aos';
+
+//- Hamburguer menu
+@import '~hamburgers/_sass/hamburgers/hamburgers';
+
+// Custom class for UI KIT
+@import './_ui.scss'

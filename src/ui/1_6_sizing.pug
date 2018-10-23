@@ -1,0 +1,62 @@
+- var title = 'Utilities';
+- var subtitle = 'Sizing';
+
+doctype html
+html(lang="en")
+  
+  include includes/header.pug
+
+  body
+    
+    //- Header
+    include includes/title-details.pug
+
+    .container
+      // WIDTH CLASSES
+      .bg-success.p-3.w-25 Width 25%
+      .bg-success.p-3.w-50 Width 50%
+      .bg-success.p-3.w-75 Width 75%
+      .bg-success.p-3.w-100 Width 100%
+      .bg-success.p-3.w-auto Width Auto
+      br
+      br
+      // HEIGHT CLASSES
+      div(style='height:300px;border: 1px solid #333;')
+        .bg-primary.d-inline-block.h-25 Height 25%
+        .bg-primary.d-inline-block.h-50 Height 50%
+        .bg-primary.d-inline-block.h-75 Height 75%
+        .bg-primary.d-inline-block.h-100 Height 100%
+        .bg-primary.d-inline-block.h-auto Height Auto
+      br
+      br
+      // BORDERS
+      .p-3.mb-2.bg-light.border Regular
+      .p-3.mb-2.bg-light.border-top Border Top
+      .p-3.mb-2.bg-light.border-bottom Border Bottom
+      .p-3.mb-2.bg-light.border-right Border Right
+      .p-3.mb-2.bg-light.border-left Border Left
+      br
+      br
+      // BORDER COLORS
+      .p-3.mb-2.bg-light.border.border-primary Primary
+      .p-3.mb-2.bg-light.border.border-secondary Secondary
+      .p-3.mb-2.bg-light.border.border-success Success
+      .p-3.mb-2.bg-light.border.border-info Info
+      .p-3.mb-2.bg-light.border.border-warning Warning
+      .p-3.mb-2.bg-light.border.border-danger Danger
+      .p-3.mb-2.bg-light.border.border-light Light
+      .p-3.mb-2.bg-light.border.border-dark Dark
+      .p-3.mb-2.bg-light.border.border-white White
+      br
+      br
+      // BORDER RADIUS
+      .p-3.mb-2.bg-light.border.rounded.border-success Rounded
+      .p-3.mb-2.bg-light.border.rounded-top Rounded Top
+      .p-3.mb-2.bg-light.border.rounded-bottom Rounded Bottom
+      .p-3.mb-2.bg-light.border.rounded-right Rounded Right
+      .p-3.mb-2.bg-light.border.rounded-left Rounded Left
+      .p-3.mb-2.bg-light.w-25.border.rounded-circle Rounded Circle
+      .p-3.mb-2.bg-light.border.rounded-0 Dark
+
+
+    div(style="margin-top:500px;")

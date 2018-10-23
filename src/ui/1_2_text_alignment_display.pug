@@ -1,0 +1,89 @@
+- var title = 'Utilities';
+- var subtitle = 'Text Alignment & Display';
+
+doctype html
+html(lang="en")
+  
+  include includes/header.pug
+
+  body
+    
+    include includes/title-details.pug
+
+    .container
+      .row
+        .col-md-12
+          <!-- JUSTIFY -->
+          p.text-justify
+            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae asperiores dolorem accusamus dolor eligendi, unde adipisci
+            | a odio, quas aperiam tempora earum delectus magnam quia veritatis in! Natus quibusdam dolores architecto magni rem!
+            | Error repellat esse dolorem dolore neque odit rem non accusamus eligendi ab nesciunt dicta voluptatibus velit, vel
+            | obcaecati quisquam optio reiciendis soluta tempora, voluptatum sapiente eos? Explicabo provident sit commodi blanditiis
+            | assumenda dolor ex aliquid aut beatae porro necessitatibus eos, neque distinctio non amet nemo et! Ipsum, dolorum quis
+            | at perferendis corporis iure aliquid illo, deserunt impedit, quod nam! Molestias atque voluptatem numquam veritatis
+            | ex mollitia eveniet.
+
+          br
+          br
+
+        .col-md-12
+          <!-- ALIGNMENT -->
+          p.text-left Text aligned left
+          p.text-center Text aligned center
+          p.text-right Text aligned right
+
+          <!-- RESPONSIVE ALIGN -->
+          p.text-sm-right Right aligned on small or larger
+          p.text-md-right Right aligned on medium or larger
+          p.text-lg-right Right aligned on large or larger
+          p.text-xl-right Right aligned on xl or larger
+
+          p.text-sm-left Left aligned text on small or larger
+          p.text-md-left Left aligned text on medium or larger
+          p.text-lg-left Left aligned text on large or wider
+          p.text-xl-left Left aligned text on extra large or wider
+
+          p.text-sm-center Center aligned text on small or larger
+          p.text-md-center Center aligned text on medium or larger
+          p.text-lg-center Center aligned text on large or wider
+          p.text-xl-center Center aligned text on extra large or wider
+
+          br
+          br
+
+        .col-md-12
+          <!-- VERTICAL ALIGNMENT -->
+          span.align-baseline baseline
+          span.align-top top
+          span.align-bottom bottom
+          span.align-middle middle
+          span.align-text-top text-top
+          span.align-text-bottom text-bottom
+
+          br
+          br
+
+        .col-md-12
+          <!-- TURN BLOCK TO INLINE -->
+          h1.d-inline.bg-success Hello
+          h1.d-inline.bg-success Goodbye
+          
+          br
+          br
+
+        .col-md-12
+          <!-- TURN INLINE TO BLOCK -->
+          span.d-block.bg-primary Block
+          br
+          br
+
+        .col-md-12
+          <!-- INLINE BLOCK -->
+          .d-inline-block.bg-warning
+            h3 Hello
+            | This is inline
+          .d-inline-block.bg-warning
+            h3 Hello
+            | This is inline
+
+    div(style="margin-top:500px;")

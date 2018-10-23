@@ -1,0 +1,68 @@
+- var title = 'CSS Components';
+- var subtitle = 'Input groups';
+
+doctype html
+html(lang="en")
+  
+  include includes/header.pug
+
+  body
+    
+    //- Header
+    include includes/title-details.pug
+
+    .container
+      // ##################START HERE###################
+      // BASIC INPUT GROUPS
+      .input-group.mb-3
+        .input-group-prepend
+          span.input-group-text @
+        input.form-control(placeholder='Username', type='text')
+      br
+      .input-group.mb-3
+        input.form-control(placeholder='Username', type='text')
+        .input-group-append
+          span.input-group-text @something.com
+      br
+      label(for='basic-url') Custom URL
+      .input-group.mb-3
+        .input-group-prepend
+          span.input-group-text https://something.com/member/
+        input.form-control(type='text')
+      br
+      .input-group.mb-3
+        .input-group-prepend
+          span.input-group-text $
+        input.form-control(type='text')
+        .input-group-append
+          span.input-group-text .00
+      br
+      // CHECKBOX
+      .input-group.mb-3
+        .input-group-prepend
+          .input-group-text
+            input(type='checkbox')
+        input.form-control(type='text')
+      br
+      // RADIO
+      .input-group.mb-3
+        .input-group-prepend
+          .input-group-text
+            input(type='radio')
+        input.form-control(type='text')
+      br
+      // MULTIPLE INPUTS
+      .input-group
+        .input-group-prepend
+          span.input-group-text(id='') Name & Email
+        input.form-control(placeholder='Full Name', type='text')
+        input.form-control(placeholder='Email', type='email')
+      br
+      // BUTTON ADDONS
+      .input-group.mb-3
+        input.form-control(placeholder='Find By Name...', type='text')
+        .input-group-append
+          button.btn.btn-outline-secondary(type='button') Search
+
+    div(style="margin-top:500px;")
+    

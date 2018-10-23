@@ -1,0 +1,103 @@
+- var title = 'Utilities';
+- var subtitle = 'Spacing';
+
+doctype html
+html(lang="en")
+  
+  include includes/header.pug
+
+  body
+    
+    //- Header
+    include includes/title-details.pug
+
+    .container
+      // MB MARGIN BOTTOM
+      h1.mb-0.bg-light Margin Bottom 0
+      h1.mb-1.bg-light Margin Bottom 1
+      h1.mb-2.bg-light Margin Bottom 2
+      h1.mb-3.bg-light Margin Bottom 3
+      h1.mb-4.bg-light Margin Bottom 4
+      h1.mb-5.bg-light Margin Bottom 5
+      br
+      br
+      // MT MARGIN TOP
+      h1.mt-0.bg-light Margin Top 0
+      h1.mt-1.bg-light Margin Top 1
+      h1.mt-2.bg-light Margin Top 2
+      h1.mt-3.bg-light Margin Top 3
+      h1.mt-4.bg-light Margin Top 4
+      h1.mt-5.bg-light Margin Top 5
+      br
+      br
+      // ML & MR
+      p
+        span.mr-5.bg-light Margin Right 5
+        |  dolor sit amet,
+        span.ml-3.bg-light Margin Left 3 
+        |  elit. Voluptatum, optio.
+      br
+      br
+      // MX MARGIN LEFT RIGHT
+      p
+        | Lorem ipsum
+        span.mx-5.bg-light Margin Left & Right 5
+        | , consectetur elit. Voluptatum, optio.
+      br
+      br
+      // MY  MARGIN TOP BOTTOM
+      p Lorem ipsum dolor sit amet, consectetur elit. Voluptatum, optio.
+      p.my-5.bg-light Margin Top & Bottom 5
+      p Lorem ipsum dolor sit amet, consectetur elit. Voluptatum, optio.
+      br
+      br
+      // BLANK - ALL SIDES
+      p Lorem ipsum dolor sit amet, consectetur elit. Voluptatum, optio.
+      p.m-5.bg-light Margin All Sides 5
+      p Lorem ipsum dolor sit amet, consectetur elit. Voluptatum, optio.
+      br
+      br
+      // PB PADDING BOTTOM
+      h1.pb-0.bg-warning Padding Bottom 0
+      h1.pb-1.bg-warning Padding Bottom 1
+      h1.pb-2.bg-warning Padding Bottom 2
+      h1.pb-3.bg-warning Padding Bottom 3
+      h1.pb-4.bg-warning Padding Bottom 4
+      h1.pb-5.bg-warning Padding Bottom 5
+      br
+      br
+      // PT PADDING TOP
+      h1.pt-0.bg-warning Padding Top 0
+      h1.pt-1.bg-warning Padding Top 1
+      h1.pt-2.bg-warning Padding Top 2
+      h1.pt-3.bg-warning Padding Top 3
+      h1.pt-4.bg-warning Padding Top 4
+      h1.pt-5.bg-warning Padding Top 5
+      br
+      br
+      // PL & PR
+      p
+        span.bg-warning.pr-5 Padding Right 5
+        |  dolor sit amet,
+        span.bg-warning.pl-3 Padding Left 3 
+        |  elit. Voluptatum, optio.
+      br
+      br
+      // PX PADDING LEFT RIGHT
+      p
+        | Lorem ipsum
+        span.px-5.bg-warning Padding Left & Right 5
+        | , consectetur elit. Voluptatum, optio.
+      br
+      br
+      // PY  PADDING TOP BOTTOM
+      p.py-5.bg-warning Padding Top & Bottom 5
+      br
+      br
+      // ALL SIDES
+      p.p-3.bg-warning Padding All Sides 5
+      // HORIZONTAL CENTERING
+      .bg-info.mx-auto(style='width: 200px;')
+        | Horizontal Centering
+
+    div(style="margin-top:500px;")

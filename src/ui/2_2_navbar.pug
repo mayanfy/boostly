@@ -1,0 +1,218 @@
+- var title = 'CSS Components';
+- var subtitle = 'Navbar';
+
+doctype html
+html(lang="en")
+  
+  include includes/header.pug
+
+  body
+    
+    //- Header
+    include includes/title-details.pug
+
+    .container
+      .row
+        .col-md-12
+          
+          <!-- SIMPLE NAVBAR -->
+          nav.navbar.navbar-expand-sm.navbar-light.bg-light.mb-3
+            .container
+              a.navbar-brand(href="#") Navbar
+              ul.navbar-nav
+                li.nav-item
+                  a.nav-link(href="#") Home
+                li.nav-item
+                  a.nav-link(href="#") About
+                li.nav-item
+                  a.nav-link(href="#") Services
+                li.nav-item
+                  a.nav-link(href="#") Contact
+          
+        .col-md-12
+          <!-- NAVBAR WITH RESPONSIVE TOGGLE -->
+          nav.navbar.navbar-expand-sm.navbar-light.bg-light.mb-3
+            .container
+              a.navbar-brand(href="#") Navbar
+              button.navbar-toggler(data-toggle="collapse", data-target="#navbarNav")
+                span.navbar-toggler-icon
+              .collapse.navbar-collapse(id="navbarNav")
+                ul.navbar-nav.ml-auto
+                  li.nav-item
+                    a.nav-link(href="#") Home
+                  li.nav-item
+                    a.nav-link(href="#") About
+                  li.nav-item
+                    a.nav-link(href="#") Services
+                  li.nav-item
+                    a.nav-link(href="#") Contact
+
+        .col-md-12
+          <!-- NAVBAR WITH FORM -->
+          nav.navbar.navbar-expand-sm.navbar-light.bg-light.mb-3
+            .container
+              a.navbar-brand(href="#") Navbar
+              button.navbar-toggler(data-toggle="collapse", data-target="#navbarNav")
+                span.navbar-toggler-icon
+              .collapse.navbar-collapse(id="navbarNav")
+                ul.navbar-nav.ml-auto
+                  li.nav-item
+                    a.nav-link(href="#") Home
+                  li.nav-item
+                    a.nav-link(href="#") About
+                  li.nav-item
+                    a.nav-link(href="#") Services
+                  li.nav-item
+                    a.nav-link(href="#") Contact
+
+                form.form-inline.ml-auto
+                  input.form-control.mr-2(type="text",placeholder="Search")
+                  button.btn.btn-outline-success Search
+
+        .col-md-12
+          <!-- NAVBAR WITH DROPDOWN -->
+          nav.navbar.navbar-expand-sm.navbar-light.bg-light.mb-3
+            .container
+              a.navbar-brand(href="#") Navbar
+              ul.navbar-nav
+                li.nav-item
+                  a.nav-link(href="#") Home
+                li.nav-item
+                  a.nav-link(href="#") About
+                li.nav-item.dropdown
+                  a.nav-link.dropdown-toggle(href="#",data-toggle="dropdown") Dropdown
+                  .dropdown-menu
+                    a.dropdown-item(href="#") Link 1
+                    a.dropdown-item(href="#") Link 2
+                    a.dropdown-item(href="#") Link 3
+                li.nav-item
+                  a.nav-link(href="#") Services
+                li.nav-item
+                  a.nav-link(href="#") Contact
+
+        .col-md-12
+          <!-- COLORS -->
+          nav.navbar.navbar-expand-sm.navbar-dark.bg-dark.mb-3
+            .container
+              a.navbar-brand(href="#") Navbar
+              ul.navbar-nav
+                li.nav-item
+                  a.nav-link(href="#") Home
+                li.nav-item
+                  a.nav-link(href="#") About
+                li.nav-item
+                  a.nav-link(href="#") Services
+                li.nav-item
+                  a.nav-link(href="#") Contact
+
+        .col-md-12
+          nav.navbar.navbar-expand-sm.navbar-dark.bg-primary.mb-3
+            .container
+              a.navbar-brand(href="#") Navbar
+              ul.navbar-nav
+                li.nav-item
+                  a.nav-link(href="#") Home
+                li.nav-item
+                  a.nav-link(href="#") About
+                li.nav-item
+                  a.nav-link(href="#") Services
+                li.nav-item
+                  a.nav-link(href="#") Contact
+
+        .col-md-12
+          nav.navbar.navbar-expand-sm.navbar-dark.bg-success.mb-3
+            .container
+              a.navbar-brand(href="#") Navbar
+              ul.navbar-nav
+                li.nav-item
+                  a.nav-link(href="#") Home
+                li.nav-item
+                  a.nav-link(href="#") About
+                li.nav-item
+                  a.nav-link(href="#") Services
+                li.nav-item
+                  a.nav-link(href="#") Contact
+
+        .col-md-12
+          <!-- FIXED BOTTOM -->
+          nav.navbar.fixed-bottom.navbar-dark.bg-dark
+            a.navbar-brand(href="#") Navbar Fixed Bottom
+
+
+    <!-- STICKY TOP -->
+    nav.navbar.sticky-top.navbar-dark.bg-dark
+      a.navbar-brand(href="#") Navbar Sticky Top
+      
+    br
+    br
+    
+    .container
+      .row
+        .col-md-12
+          .container
+            <!-- NAVS -->
+            ul.nav.nav-pills
+              li.nav-item
+                a.nav-link(href="#") Link 1
+              li.nav-item
+                a.nav-link.active(href="#") Link 2
+              li.nav-item
+                a.nav-link(href="#") Link 3
+              li.nav-item
+                a.nav-link(href="#") Link 4
+            
+            <!-- HORIZONTAL ALIGN -->
+            ul.nav.nav-pills.justify-content-center
+              li.nav-item
+                a.nav-link(href="#") Link 1
+              li.nav-item
+                a.nav-link.active(href="#") Link 2
+              li.nav-item
+                a.nav-link(href="#") Link 3
+              li.nav-item
+                a.nav-link(href="#") Link 4
+
+            <!-- RIGHT ALIGN -->
+            ul.nav.nav-pills.justify-content-end
+              li.nav-item
+                a.nav-link(href="#") Link 1
+              li.nav-item
+                a.nav-link.active(href="#") Link 2
+              li.nav-item
+                a.nav-link(href="#") Link 3
+              li.nav-item
+                a.nav-link(href="#") Link 4
+
+            br
+            br
+
+            <!-- VERTICAL -->
+            ul.nav.nav-pills.flex-column
+              li.nav-item
+                a.nav-link(href="#") Link 1
+              li.nav-item
+                a.nav-link.active(href="#") Link 2
+              li.nav-item
+                a.nav-link(href="#") Link 3
+              li.nav-item
+                a.nav-link(href="#") Link 4
+
+            br
+            br
+
+            <!-- FILL & JUSTIFY -->
+            ul.nav.nav-fill.nav-pills
+              li.nav-item
+                a.nav-link(href="#") Link 1
+              li.nav-item
+                a.nav-link.active(href="#") Link 2
+              li.nav-item
+                a.nav-link(href="#") Link 3
+              li.nav-item
+                a.nav-link(href="#") Link 4
+
+            br
+            br
+
+
+    div(style="margin-top:500px;")

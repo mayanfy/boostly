@@ -1,0 +1,67 @@
+- var title = 'Utilities';
+- var subtitle = 'Colors background';
+
+doctype html
+html(lang="en")
+  
+  include includes/header.pug
+
+  body
+    
+    //- Header
+    include includes/title-details.pug
+
+    .container
+      // TEXT COLORS
+      p.text-primary Text Primary Color
+      p.text-secondary Text Secondary Color
+      p.text-success Text Success Color
+      p.text-info Text Info Color
+      p.text-warning Text Warning Color
+      p.text-danger Text Danger Color
+      p.text-light Text Light Color
+      p.text-dark Text Dark Color
+      p.text-white Text White Color
+      p.text-muted Text Muted
+      p.text-black-50 Text Black 50
+      p.text-white Text White 50
+      br
+      br
+      // LINK COLORS
+      p
+        a.text-primary(href='#') Primary link
+      p
+        a.text-secondary(href='#') Secondary link
+      p
+        a.text-success(href='#') Success link
+      p
+        a.text-info(href='#') Info link
+      p
+        a.text-warning(href='#') Warning link
+      p
+        a.text-danger(href='#') Danger link
+      p
+        a.text-light(href='#') Light link
+      p
+        a.text-dark(href='#') Dark link
+      p
+        a.text-muted(href='#') Muted link
+      p
+        a.text-white(href='#') White link
+      br
+      br
+      // BACKGROUND COLORS
+      .bg-primary.text-white Background Primary Color
+      .bg-secondary Background Secondary Color
+      .bg-success Background Success Color
+      .bg-info Background Info Color
+      .bg-warning Background Warning Color
+      .bg-danger Background Danger Color
+      .bg-light Background Light Color
+      .bg-dark.text-light Background Dark Color
+      .bg-white Background White Color
+      .bg-transparent Background Transparent
+      // INVISIBLE
+      p.invisible Hello
+
+    div(style="margin-top:500px;")

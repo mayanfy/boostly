@@ -1,0 +1,90 @@
+- var title = 'CSS Components';
+- var subtitle = 'Alerts progress';
+
+doctype html
+html(lang="en")
+  
+  include includes/header.pug
+
+  body
+    
+    //- Header
+    include includes/title-details.pug
+
+    .container
+      // ALERTS
+      .alert.alert-primary
+        strong Primary
+        |  Blog post added
+      .alert.alert-secondary
+        strong Secondary
+        |  Blog post added
+      .alert.alert-success
+        strong Success
+        |  Blog post added
+      .alert.alert-danger
+        strong Danger
+        |  Please check the log files
+      .alert.alert-info
+        strong Info
+        |  You have a new message
+      .alert.alert-warning
+        strong Warning
+        |  Please check the log files
+      .alert.alert-light
+        strong Light
+        |  Please check the log files
+      .alert.alert-dark
+        strong Dark
+        |  Please check the log files
+      // DISMISSABLE ALERT
+      .alert.alert-success.alert-dismissible
+        button.close(type='button', data-dismiss='alert')
+          span ×
+        strong Dismissable
+        |  Blog post added
+      // EXTRA CONTENT
+      .alert.alert-success
+        h4.alert-heading Congrats!
+        p
+          | Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit dignissimos eius, sit quo assumenda totam commodi
+          | ipsum saepe molestias eligendi exercitationem repudiandae qui facilis deserunt non, harum ab quam? Cumque
+        hr
+        p.mb-0 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, odio?
+      br
+      br
+      // PROGRESS BARS
+      .progress
+        .progress-bar(style='width:35%;')
+      br
+      .progress
+        .progress-bar(style='width:35%;') 35%
+      br
+      .progress
+        .progress-bar.bg-success(style='width:55%;')
+      br
+      .progress
+        .progress-bar.bg-info(style='width:75%;')
+      br
+      .progress
+        .progress-bar.bg-warning(style='width:35%;')
+      br
+      // HEIGHT
+      .progress(style='height:1px;')
+        .progress-bar.bg-success(style='width:75%;')
+      br
+      // STRIPED
+      .progress
+        .progress-bar.bg-danger.progress-bar-striped(style='width:35%;')
+      br
+      // ANIMATED
+      .progress
+        .progress-bar.bg-info.progress-bar-striped.progress-bar-animated(style='width:35%;')
+      br
+      // MULTIPLE BARS
+      .progress
+        .progress-bar.bg-warning(style='width:25%;')
+        .progress-bar.bg-success(style='width:25%;')
+        .progress-bar.bg-primary(style='width:25%;')
+
+    div(style="margin-top:500px;")

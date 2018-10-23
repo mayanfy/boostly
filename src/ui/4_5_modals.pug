@@ -1,0 +1,50 @@
+- var title = 'JavaScript Widgets';
+- var subtitle = 'Modals';
+
+doctype html
+html(lang="en")
+  
+  include includes/header.pug
+
+  body
+    
+    //- Header
+    include includes/title-details.pug
+
+    //- Body
+    .container
+      // MODAL TRIGGER
+      button.btn.btn-primary(data-toggle='modal', data-target='#myModal') Launch Modal
+      // MODAL
+      #myModal.modal
+        .modal-dialog
+          .modal-content
+            .modal-header
+              h5.modal-title Modal Title
+              button.close(data-dismiss='modal') ×
+            .modal-body
+              | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus unde veniam harum magnam molestias dignissimos omnis
+              | architecto, quod, obcaecati dolorum debitis dolore porro qui, iusto quo accusantium voluptates pariatur illo.
+            .modal-footer
+              button.btn.btn-secondary(data-dismiss='modal') Close
+      br
+      br
+      // LOGIN MODAL TRIGGER
+      button.btn.btn-dark(data-toggle='modal', data-target='#loginModal') Login
+      // LOGIN MODAL
+      #loginModal.modal
+        .modal-dialog
+          .modal-content
+            .modal-header
+              h5.modal-title Login
+              button.close(data-dismiss='modal') ×
+            .modal-body
+              form
+                .form-group
+                  label(for='username') Username
+                  input.form-control(placeholder='Username', type='text')
+                .form-group
+                  label(for='password') Password
+                  input.form-control(placeholder='Password', type='password')
+            .modal-footer
+              button.btn.btn-primary(data-dismiss='modal') Login

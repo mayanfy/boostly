@@ -1,0 +1,178 @@
+- var title = 'CSS Components';
+- var subtitle = 'Cards';
+
+doctype html
+html(lang="en")
+  
+  include includes/header.pug
+
+  body
+    
+    //- Header
+    include includes/title-details.pug
+
+    .container
+      // BLOCK
+      .card
+        .card-body
+          | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, voluptate.
+      br
+      br
+      // SIMPLE CARD
+      .card(style='width: 20rem;')
+        .card-body
+          h4.card-title Card Title
+          h6.card-subtitle.text-muted Card subtitle
+          p.card-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, quas.
+          a.btn.btn-outline-primary(href='#') Read More
+      br
+      br
+      // CARD WITH IMAGE
+      .card
+        img.card-img-top(src='https://source.unsplash.com/random/1024x768', alt='')
+        .card-body
+          h4.card-title Card Title
+          p.card-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, quas.
+          a.btn.btn-success.btn-block(href='#') Read More
+      br
+      br
+      // CARD WITH HEADER
+      .card
+        .card-header
+          | My Card
+        .card-body
+          h4.card-title Card Title
+          p.card-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, perspiciatis.
+          a.btn.btn-danger(href='#') Read More
+      br
+      br
+      // HEADER, FOOTER, CENTERED
+      .card.text-center
+        .card-header
+          | My Card
+        .card-body
+          h4.card-title Card Title
+          p.card-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, perspiciatis.
+          a.btn.btn-dark(href='#') Read More
+        .card-footer.text-muted
+          | 2 Days Ago
+      br
+      br
+      // CARD WITH NAV
+      .card
+        .card-header
+          ul.nav.nav-tabs.card-header-tabs
+            li.nav-item
+              a.nav-link.active(href='#') Active
+            li.nav-item
+              a.nav-link(href='#') Link
+            li.nav-item
+              a.nav-link.disabled(href='#') Disabled
+        .card-body
+          h4.card-title Card Title
+          p.card-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, perspiciatis.
+          a.btn.btn-primary(href='#') Read More
+      br
+      br
+      // IMAGE OVERLAYS
+      .card.text-white
+        img.card-img(src='https://source.unsplash.com/random/1000x300', alt='')
+        .card-img-overlay
+          h4.card-title Card title
+          p.card-text
+            | This is a wider card with supporting text below as a natural lead-in to additional content. This content
+            | is a little bit longer.
+          p.card-text
+            small.text-muted Last updated 3 mins ago
+      br
+      br
+      // BACKGROUND COLOR
+      .card.bg-primary.text-white.mb-3
+        .card-header Header
+        .card-body
+          h4.card-title Card Title
+          p.card-text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      .card.bg-danger.text-white.mb-3
+        .card-header Header
+        .card-body
+          h4.card-title Card Title
+          p.card-text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      .card.bg-info.text-white.mb-3
+        .card-header Header
+        .card-body
+          h4.card-title Card Title
+          p.card-text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      br
+      br
+      // CARD OUTLINE
+      .card.border-primary.mb-3
+        .card-body
+          h4.card-title Card Title
+          p.card-text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      .card.border-danger.mb-3
+        .card-body
+          h4.card-title Card Title
+          p.card-text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      .card.border-info.mb-3
+        .card-body
+          h4.card-title Card Title
+          p.card-text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      br
+      br
+      // CARD COLUMNS
+      .card-columns
+        .card
+          img.card-img-top.img-fluid(src='https://source.unsplash.com/random/300x200', alt='')
+          .card-body
+            h4.card-title Card title that wraps to a new line
+            p.card-text
+              | This is a longer card with supporting text below as a natural lead-in to additional content. This content
+              | is a little bit longer.
+        .card.p-3
+          blockquote
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+            footer
+              small
+                | Someone famous in
+                cite(title='Source Title') Source Title
+        .card
+          img.card-img-top.img-fluid(src='https://source.unsplash.com/random/301x200', alt='')
+          .card-body
+            h4.card-title Card title
+            p.card-text This card has supporting text below as a natural lead-in to additional content.
+            p.card-text
+              small.text-muted Last updated 3 mins ago
+        .card.bg-dark.text-white.p-3
+          blockquote.card-bodyquote
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.
+            footer.blockquote-footer
+              small
+                | Someone famous in
+                cite(title='Source Title') Source Title
+        .card.text-center
+          .card-body
+            h4.card-title Card title
+            p.card-text This card has supporting text below as a natural lead-in to additional content.
+            p.card-text
+              small.text-muted Last updated 3 mins ago
+        .card
+          img.card-img-top.img-fluid(src='https://source.unsplash.com/random/302x200', alt='')
+        .card.p-3.text-right
+          blockquote.card-bodyquote
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+            footer.blockquote-footer
+              small
+                | Someone famous in
+                cite(title='Source Title') Source Title
+        .card.bg-primary.text-white
+          .card-body
+            h4.card-title Card title
+            p.card-text
+              | This is a wider card with supporting text below as a natural lead-in to additional content. This card
+              | has even longer content than the first to show that equal height action.
+            p.card-text
+              small.text-muted Last updated 3 mins ago
+
+    div(style="margin-top:500px;")

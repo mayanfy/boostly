@@ -1,0 +1,71 @@
+- var title = 'CSS Components';
+- var subtitle = 'List group badges';
+
+doctype html
+html(lang="en")
+  
+  include includes/header.pug
+
+  body
+    
+    //- Header
+    include includes/title-details.pug
+
+    .container
+      // ################START HERE##################
+      // LIST GROUP
+      ul.list-group.mb-5
+        li.list-group-item My List Item One
+        li.list-group-item.active My List Item Two
+        li.list-group-item My List Item Three
+        li.list-group-item My List Item Four
+        li.list-group-item My List Item Five
+      // LIST GROUP WITH LINKS
+      ul.list-group.mb-5
+        a.list-group-item(href='#') My List Item One
+        a.list-group-item(href='#') My List Item Two
+        a.list-group-item.active(href='#') My List Item Three
+        a.list-group-item(href='#') My List Item Four
+        a.list-group-item(href='#') My List Item Five
+      // CONTEXTUAL CLASSES
+      ul.list-group.mb-5
+        li.list-group-item Regular List Item
+        li.list-group-item.list-group-item-primary Primary List Item
+        li.list-group-item.list-group-item-secondary Secondary List Item
+        li.list-group-item.list-group-item-success Success List Item
+        li.list-group-item.list-group-item-info Info List Item
+        li.list-group-item.list-group-item-warning Warning List Item
+        li.list-group-item.list-group-item-danger Danger List Item
+        li.list-group-item.list-group-item-light Light List Item
+        li.list-group-item.list-group-item-dark Dark List Item
+      // FLUSH LIST GROUP
+      ul.list-group.list-group-flush.mb-5
+        li.list-group-item My List Item One
+        li.list-group-item My List Item Two
+        li.list-group-item My List Item Three
+        li.list-group-item.active My List Item Four
+        li.list-group-item My List Item Five
+      // BADGE
+      ul.list-group.mb-5
+        li.list-group-item My List Item One
+        li.list-group-item.d-flex.justify-content-between.align-items-center
+          | My List Item Two
+          span.badge.badge-primary 30
+        li.list-group-item My List Item Three
+        li.list-group-item My List Item Four
+        li.list-group-item My List Item Five
+      // BREADCRUMB
+      ol.breadcrumb
+        li.breadcrumb-item.active Home
+      ol.breadcrumb
+        li.breadcrumb-item
+          a(href='#') Home
+        li.breadcrumb-item.active Users
+      ol.breadcrumb
+        li.breadcrumb-item
+          a(href='#') Home
+        li.breadcrumb-item
+          a(href='#') Users
+        li.breadcrumb-item.active Brad
+        
+    div(style="margin-top:500px;")

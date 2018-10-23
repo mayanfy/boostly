@@ -1,0 +1,100 @@
+- var title = 'CSS Components';
+- var subtitle = 'Media object';
+
+doctype html
+html(lang="en")
+  
+  include includes/header.pug
+
+  body
+    
+    //- Header
+    include includes/title-details.pug
+
+    .container
+      // MEDIA OBJECT
+      .media
+        img.mr-3.mt-3(src='https://source.unsplash.com/random/90x90')
+        .media-body
+          h5 Media heading
+          |                 Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in
+          |                 vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue
+          |                 felis in faucibus.
+      br
+      br
+      // NESTING MEDIA OBJECTS
+      .media
+        img.mr-3(src='https://source.unsplash.com/random/90x91')
+        .media-body
+          h5 Media heading
+          |                 Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in
+          |                 vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue
+          |                 felis in faucibus.
+          .media.mt-4
+            a.pr-3(href='#')
+              img(src='https://source.unsplash.com/random/90x92')
+            .media-body
+              h5 Nested Media
+              |                         Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in
+              |                         vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia
+              |                         congue felis in faucibus.
+      br
+      br
+      // TOP ALIGNED (DEFAULT)
+      .media
+        img.mr-3.align-self-start(src='https://source.unsplash.com/random/90x93')
+        .media-body
+          h5 Top aligned media
+          p
+            | Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio,
+            | vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla.
+            | Donec lacinia congue felis in faucibus.
+      br
+      br
+      // CENTER ALIGNED
+      .media
+        img.mr-3.align-self-center(src='https://source.unsplash.com/random/90x94')
+        .media-body
+          h5 Center aligned media
+          p
+            | Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio,
+            | vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla.
+            | Donec lacinia congue felis in faucibus.
+      br
+      br
+      // BOTTOM ALIGNED
+      .media
+        img.mr-3.align-self-end(src='https://source.unsplash.com/random/90x95')
+        .media-body
+          h5 Bottom aligned media
+          p
+            | Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio,
+            | vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla.
+            | Donec lacinia congue felis in faucibus.
+      br
+      br
+      // MEDIA LIST
+      ul.list-unstyled
+        li.media
+          img.mr-3(src='https://source.unsplash.com/random/90x96')
+          .media-body
+            h5 List based media object
+            |                     Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in
+            |                     vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia
+            |                     congue felis in faucibus.
+        li.media
+          img.mr-3(src='https://source.unsplash.com/random/90x97')
+          .media-body
+            h5 List based media object
+            |                     Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in
+            |                     vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia
+            |                     congue felis in faucibus.
+        li.media
+          img.mr-3(src='https://source.unsplash.com/random/90x98')
+          .media-body
+            h5 List based media object
+            |                     Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in
+            |                     vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia
+            |                     congue felis in faucibus.
+
+    div(style="margin-top:500px;")

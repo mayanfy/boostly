@@ -1,0 +1,115 @@
+- var title = 'Utilities';
+- var subtitle = 'Basic typography';
+
+doctype html
+html(lang="en")
+  
+  include includes/header.pug
+
+  body
+    
+    include includes/title-details.pug
+
+    .container
+      .row
+        .col-md-12
+          <!-- HEADINGS -->
+          h1 Heading One
+          h2 Heading Two
+          h3 Heading Three
+          h4 Heading Four
+          h5 Heading Five
+          h6 Heading Six
+          br
+          br
+
+        .col-md-12
+          <!-- DISPLAY CLASSES -->
+          h1.display-1 Display 1
+          h1.display-2 Display 2
+          h1.display-3 Display 3
+          h1.display-4 Display 4
+          br
+          br
+
+        .col-md-12
+          <!-- PARAGRAPHS -->
+          p
+            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam dolore repellendus veniam consequatur vero numquam
+            | voluptatem quam ab expedita eum, ipsam? Necessitatibus dicta quaerat, vitae dolorum, dolor autem reiciendis sapiente
+        
+        .col-md-12 
+          <!-- LEAD -->
+          p.lead
+            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam dolore repellendus veniam consequatur vero numquam
+            | voluptatem quam ab expedita eum, ipsam? Necessitatibus dicta quaerat, vitae dolorum, dolor autem reiciendis sapiente.
+        
+        .col-md-12
+          <!-- MONOSPACE PARAGRAPH -->
+          p.text-monospace
+            | My monospace paragraph
+
+        .col-md-12
+          <!-- STYLE CLASSES -->
+          p.font-weight-bold
+            | Bold Text
+          p.font-weight-normal
+            | Normal Text
+          p.font-italic
+            | Italic Text
+
+        .col-md-12
+          <!-- TEXT TRANSFORMS -->
+          p.text-lowercase 
+            | MAKE LOWERCASE
+          p.text-uppercase
+            | make uppercase
+          p.text-capitalize
+            | make capitalized
+          br
+          br
+
+        .col-md-12
+          <!-- BLOCKQUOTES -->
+          blockquote.blockquote
+            p This is a blockquote
+          
+          <!-- BLOCKQUOTE RIGHT ALIGNED -->
+          blockquote.blockquote.text-right
+            p This is a blockquote aligned right
+          
+          <!-- BLOCKQUOTE WITH FOOTER -->
+          blockquote.blockquote.text-right
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+            footer.blockquote-footer Someone famous in
+              cite(title="Source Title") Source Title
+
+          br
+          br
+
+        .col-md-12
+          <!-- TEXT TRUNCATE -->
+          .text-truncate
+            | Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda repellat nobis sunt qui consequatur architecto veritatis,
+            | iure odit, debitis pariatur perspiciatis? Asperiores facere veniam, totam ullam dignissimos voluptate atque! Eos, animi
+            | quos. Sint magni nulla provident et consequatur officia tempora!
+
+          br
+          br
+
+        .col-md-12
+          <!-- LISTS -->
+          ul.list-unstyled
+            li Lorem ipsum dolor sit amet
+            li Lorem ipsum dolor sit amet
+            li Lorem ipsum dolor sit amet
+            li Lorem ipsum dolor sit amet
+
+          <!-- INLINE LIST -->
+          ul.list-inline
+            li.list-inline-item Lorem ipsum
+            li.list-inline-item Lorem ipsum
+            li.list-inline-item Lorem ipsum
+            li.list-inline-item Lorem ipsum
+
+    div(style="margin-top:500px;")

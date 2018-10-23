@@ -1,0 +1,85 @@
+- var title = 'JavaScript Widgets';
+- var subtitle = 'Carousel';
+
+doctype html
+html(lang="en")
+  
+  include includes/header.pug
+
+  body
+    
+    //- Header
+    include includes/title-details.pug
+
+    //- Body
+    .container
+      .row
+        .col-sm-8.m-auto
+          // SIMPLE SLIDER
+          #slider1.carousel.slide.mb-5(data-ride='carousel')
+            .carousel-inner
+              .carousel-item.active
+                img.d-block.img-fluid(src='https://source.unsplash.com/wgq4eit198Q/700x400', alt='First Slide')
+              .carousel-item
+                img.d-block.img-fluid(src='https://source.unsplash.com/WLUHO9A_xik/700x400', alt='Second Slide')
+              .carousel-item
+                img.d-block.img-fluid(src='https://source.unsplash.com/4yta6mU66dE/700x400', alt='Third Slide')
+          // SLIDER WITH CONTROLS
+          #slider2.carousel.slide.mb-5(data-ride='carousel')
+            .carousel-inner
+              .carousel-item.active
+                img.d-block.img-fluid(src='https://source.unsplash.com/wgq4eit198Q/700x400', alt='First Slide')
+              .carousel-item
+                img.d-block.img-fluid(src='https://source.unsplash.com/WLUHO9A_xik/700x400', alt='Second Slide')
+              .carousel-item
+                img.d-block.img-fluid(src='https://source.unsplash.com/4yta6mU66dE/700x400', alt='Third Slide')
+            // CONTROLS
+            a.carousel-control-prev(href='#slider2', data-slide='prev')
+              span.carousel-control-prev-icon
+            a.carousel-control-next(href='#slider2', data-slide='next')
+              span.carousel-control-next-icon
+          // SLIDER WITH INDICATORS
+          #slider3.carousel.slide.mb-5(data-ride='carousel')
+            ol.carousel-indicators
+              li.active(data-target='#slider3', data-slide-to='0')
+              li(data-target='#slider3', data-slide-to='1')
+              li(data-target='#slider3', data-slide-to='2')
+            .carousel-inner
+              .carousel-item.active
+                img.d-block.img-fluid(src='https://source.unsplash.com/wgq4eit198Q/700x400', alt='First Slide')
+              .carousel-item
+                img.d-block.img-fluid(src='https://source.unsplash.com/WLUHO9A_xik/700x400', alt='Second Slide')
+              .carousel-item
+                img.d-block.img-fluid(src='https://source.unsplash.com/4yta6mU66dE/700x400', alt='Third Slide')
+            // CONTROLS
+            a.carousel-control-prev(href='#slider3', data-slide='prev')
+              span.carousel-control-prev-icon
+            a.carousel-control-next(href='#slider3', data-slide='next')
+              span.carousel-control-next-icon
+          // SLIDER WITH CAPTIONS
+          #slider4.carousel.slide.mb-5(data-ride='carousel')
+            ol.carousel-indicators
+              li.active(data-target='#slider4', data-slide-to='0')
+              li(data-target='#slider4', data-slide-to='1')
+              li(data-target='#slider4', data-slide-to='2')
+            .carousel-inner
+              .carousel-item.active
+                img.d-block.img-fluid(src='https://source.unsplash.com/wgq4eit198Q/700x400', alt='First Slide')
+                .carousel-caption.d-none.d-md-block
+                  h3 Slide One
+                  p Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, illo?
+              .carousel-item
+                img.d-block.img-fluid(src='https://source.unsplash.com/WLUHO9A_xik/700x400', alt='Second Slide')
+                .carousel-caption.d-none.d-md-block
+                  h3 Slide Two
+                  p Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, illo?
+              .carousel-item
+                img.d-block.img-fluid(src='https://source.unsplash.com/4yta6mU66dE/700x400', alt='Third Slide')
+                .carousel-caption.d-none.d-md-block
+                  h3 Slide Three
+                  p Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, illo?
+            // CONTROLS
+            a.carousel-control-prev(href='#slider4', data-slide='prev')
+              span.carousel-control-prev-icon
+            a.carousel-control-next(href='#slider4', data-slide='next')
+              span.carousel-control-next-icon

@@ -1,0 +1,87 @@
+- var title = 'Grid & Flexbox';
+- var subtitle = 'Auto margins wrapping order';
+
+doctype html
+html(lang="en")
+  
+  include includes/header.pug
+
+  body
+    
+    //- Header
+    include includes/title-details.pug
+
+    .container
+      // MR-AUTO
+      .d-flex.row-hl
+        .mr-auto.p-2.item-hl Flex item
+        .p-2.item-hl Flex item
+        .p-2.item-hl Flex item
+      br
+      br
+      // ML-AUTO
+      .d-flex.row-hl
+        .p-2.item-hl Flex item
+        .p-2.item-hl Flex item
+        .ml-auto.p-2.item-hl Flex item
+      br
+      br
+      // MB-AUTO
+      .d-flex.flex-column.row-hl
+        .mb-auto.p-2.item-hl Flex item
+        .p-2.item-hl Flex item
+        .p-2.item-hl Flex item
+      br
+      br
+      // MT-AUTO
+      .d-flex.flex-column.row-hl
+        .p-2.item-hl Flex item
+        .p-2.item-hl Flex item
+        .mt-auto.p-2.item-hl Flex item
+      br
+      br
+      // NO WRAP
+      .d-flex.flex-nowrap.row-hl
+        .p-2.item-hl Flex item
+        .p-2.item-hl Flex item
+        .p-2.item-hl Flex item
+        .p-2.item-hl Flex item
+        .p-2.item-hl Flex item
+        .p-2.item-hl Flex item
+        .p-2.item-hl Flex item
+        .p-2.item-hl Flex item
+        .p-2.item-hl Flex item
+        .p-2.item-hl Flex item
+        .p-2.item-hl Flex item
+        .p-2.item-hl Flex item
+        .p-2.item-hl Flex item
+        .p-2.item-hl Flex item
+        .p-2.item-hl Flex item
+      br
+      br
+      // WRAP
+      .d-flex.flex-wrap.row-hl
+        .p-2.item-hl Flex item
+        .p-2.item-hl Flex item
+        .p-2.item-hl Flex item
+        .p-2.item-hl Flex item
+        .p-2.item-hl Flex item
+        .p-2.item-hl Flex item
+        .p-2.item-hl Flex item
+        .p-2.item-hl Flex item
+        .p-2.item-hl Flex item
+        .p-2.item-hl Flex item
+        .p-2.item-hl Flex item
+        .p-2.item-hl Flex item
+        .p-2.item-hl Flex item
+        .p-2.item-hl Flex item
+        .p-2.item-hl Flex item
+      br
+      br
+      // ORDERING
+      .d-flex.row-hl
+        .order-3.p-2.item-hl First flex item
+        .order-2.p-2.item-hl Second flex item
+        .order-1.p-2.item-hl Third flex item
+
+    div(style="margin-top:500px;")

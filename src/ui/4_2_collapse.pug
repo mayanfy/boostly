@@ -1,0 +1,54 @@
+- var title = 'JavaScript Widgets';
+- var subtitle = 'Collapse';
+
+doctype html
+html(lang="en")
+  
+  include includes/header.pug
+
+  body
+    
+    //- Header
+    include includes/title-details.pug
+
+    //- Body
+    .container
+      // BUTTON WITH COLLAPSE
+      button.btn.btn-primary.d-block.mb-4(data-toggle='collapse', data-target='#collapse-btn-1') Read More
+      #collapse-btn-1.collapse.mb-5
+        .card
+          .card-body
+            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eius libero quisquam nobis explicabo vel non necessitatibus
+            | ipsum doloribus cupiditate voluptate recusandae quo autem error debitis, sed, minima repellendus commodi.
+      // ACCORDION
+      #accordion
+        .card
+          .card-header
+            h5
+              a(href='#collapse1', data-parent='#accordion', data-toggle='collapse')
+                | Collapse One
+          #collapse1.collapse.show
+            .card-body
+              | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis ea iste a doloremque, cumque, debitis eum vel ipsum architecto
+              | aut, recusandae totam ullam aperiam. Nesciunt expedita officiis animi quam corporis optio inventore facilis sint
+              | et nulla in, repellat debitis dolor at nisi quo, unde temporibus. Quos nisi nostrum officia, illo.
+        .card
+          .card-header
+            h5
+              a(href='#collapse2', data-parent='#accordion', data-toggle='collapse')
+                | Collapse Two
+          #collapse2.collapse
+            .card-body
+              | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis ea iste a doloremque, cumque, debitis eum vel ipsum architecto
+              | aut, recusandae totam ullam aperiam. Nesciunt expedita officiis animi quam corporis optio inventore facilis sint
+              | et nulla in, repellat debitis dolor at nisi quo, unde temporibus. Quos nisi nostrum officia, illo.
+        .card
+          .card-header
+            h5
+              a(href='#collapse3', data-parent='#accordion', data-toggle='collapse')
+                | Collapse Three
+          #collapse3.collapse
+            .card-body
+              | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis ea iste a doloremque, cumque, debitis eum vel ipsum architecto
+              | aut, recusandae totam ullam aperiam. Nesciunt expedita officiis animi quam corporis optio inventore facilis sint
+              | et nulla in, repellat debitis dolor at nisi quo, unde temporibus. Quos nisi nostrum officia, illo.

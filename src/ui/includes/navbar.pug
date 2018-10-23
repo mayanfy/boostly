@@ -1,0 +1,61 @@
+.container
+  nav.navbar.navbar-expand-lg.navbar-light.bg-light.p-4.rounded.mb-4
+    a.navbar-brand(href='./index.html') 
+      img.mr-2(src='../img/bootstrap-solid.svg', alt='', width='30', height='30')
+      | Boostly
+    button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+      span.navbar-toggler-icon
+    #navbarSupportedContent.collapse.navbar-collapse
+      ul.navbar-nav.mr-auto
+        //- li.nav-item.active
+        //-   a.nav-link(href='/')
+        //-     | Template 
+        //-     span.sr-only (current)
+        li.nav-item.dropdown
+          a#navbarDropdownUtilities.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+            | 1: Utilities
+          .dropdown-menu(aria-labelledby='navbarDropdownUtilities')
+            a.dropdown-item(href='1_1_basic_typography.html') 1.1 Basic Typography
+            a.dropdown-item(href='1_2_text_alignment_display.html') 1.2 Text Alignment & Display
+            a.dropdown-item(href='1_3_floats_position.html') 1.3 Floats & Position
+            a.dropdown-item(href='1_4_colors_background.html') 1.4: Colors & Background
+            a.dropdown-item(href='1_5_spacing.html') 1.5 Spacing
+            a.dropdown-item(href='1_6_sizing.html') 1.6 Sizing
+            a.dropdown-item(href='1_7_breakpoints.html') 1.7 Breakpoints
+        li.nav-item.dropdown
+          a#navbarDropdownCss.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+            | 2: CSS Components
+          .dropdown-menu(aria-labelledby='navbarDropdownCss')
+            a.dropdown-item(href='2_1_buttons.html') 2.1 Buttons
+            a.dropdown-item(href='2_2_navbar.html') 2.2 Navbar
+            a.dropdown-item(href='2_3_list_groups_badges.html') 2.3 List Groups & Badges
+            a.dropdown-item(href='2_4_forms.html') 2.4 Forms
+            a.dropdown-item(href='2_5_input_groups.html') 2.5 Input Groups
+            a.dropdown-item(href='2_6_alerts_progress.html') 2.6 Alerts & Progress
+            a.dropdown-item(href='2_7_tables_pagination.html') 2.7 Tables & Pagination
+            a.dropdown-item(href='2_8_cards.html') 2.8 Cards
+            a.dropdown-item(href='2_9_media_object.html') 2.9 Media Objects
+            a.dropdown-item(href='2_10_jumbotron.html') 2.10 Jumbotron
+        li.nav-item.dropdown
+          a#navbarDropdownFlexbox.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+            | 3: Grid & Flexbox
+          .dropdown-menu(aria-labelledby='navbarDropdownFlexbox')
+            a.dropdown-item(href='3_1_grid_system.html') 3.1 Grid System
+            a.dropdown-item(href='3_2_grid_alignment.html') 3.2 Grid Alignment
+            a.dropdown-item(href='3_3_flexbox.html') 3.3 Flexbox
+            a.dropdown-item(href='3_4_auto_margins_wrapping_order.html') 3.4 Auto Margins & Wrap
+        li.nav-item.dropdown
+          a#navbarDropdownJavascript.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+            | 4: JavaScript Widgets
+          .dropdown-menu(aria-labelledby='navbarDropdownJavascript')
+            a.dropdown-item(href='4_1_carousel.html') 4.1 Carousel
+            a.dropdown-item(href='4_2_collapse.html') 4.2 Collapse
+            a.dropdown-item(href='4_3_tooltips.html') 4.3 Tooltips
+            a.dropdown-item(href='4_4_popovers.html') 4.4 Popovers
+            a.dropdown-item(href='4_5_modals.html') 4.5 Modals
+            a.dropdown-item(href='4_6_scrollspy.html') 4.6 ScrollSpy
+      .my-2.my-lg-0
+        //- input.form-control.mr-sm-2(placeholder='Buscar', aria-label='Buscar', type='search')
+        a.btn.btn-primary.shadow(href='/' ) 
+          i.mdi.mdi-arrow-left.mr-1
+          | Return to template

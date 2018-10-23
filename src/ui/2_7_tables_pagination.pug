@@ -1,0 +1,349 @@
+- var title = 'CSS Components';
+- var subtitle = 'Tables pagination';
+
+doctype html
+html(lang="en")
+  
+  include includes/header.pug
+
+  body
+    
+    //- Header
+    include includes/title-details.pug
+
+    .container
+      // TABLE
+      table.table
+        thead
+          tr
+            th #
+            th First Name
+            th Last Name
+            th Email
+        tbody
+          tr
+            th(scope='row') 1
+            td John
+            td Doe
+            td jdoe@gmail.com
+          tr
+            th(scope='row') 2
+            td Will
+            td Johnson
+            td will@yahoo.com
+          tr
+            th(scope='row') 3
+            td Shannon
+            td Williams
+            td shannon@yahoo.com
+      br
+      // INVERSE/DARK TABLE
+      table.table.table-dark
+        thead
+          tr
+            th #
+            th First Name
+            th Last Name
+            th Email
+        tbody
+          tr
+            th(scope='row') 1
+            td John
+            td Doe
+            td jdoe@gmail.com
+          tr
+            th(scope='row') 2
+            td Will
+            td Johnson
+            td will@yahoo.com
+          tr
+            th(scope='row') 3
+            td Shannon
+            td Williams
+            td shannon@yahoo.com
+      br
+      // TABLE HEAD INVERSE
+      table.table
+        thead.thead-dark
+          tr
+            th #
+            th First Name
+            th Last Name
+            th Email
+        tbody
+          tr
+            th(scope='row') 1
+            td John
+            td Doe
+            td jdoe@gmail.com
+          tr
+            th(scope='row') 2
+            td Will
+            td Johnson
+            td will@yahoo.com
+          tr
+            th(scope='row') 3
+            td Shannon
+            td Williams
+            td shannon@yahoo.com
+      br
+      // STRIPED TABLE
+      table.table.table-striped
+        thead
+          tr
+            th #
+            th First Name
+            th Last Name
+            th Email
+        tbody
+          tr
+            th(scope='row') 1
+            td John
+            td Doe
+            td jdoe@gmail.com
+          tr
+            th(scope='row') 2
+            td Will
+            td Johnson
+            td will@yahoo.com
+          tr
+            th(scope='row') 3
+            td Shannon
+            td Williams
+            td shannon@yahoo.com
+      // BORDERED TABLE
+      table.table.table-bordered
+        thead
+          tr
+            th #
+            th First Name
+            th Last Name
+            th Email
+        tbody
+          tr
+            th(scope='row') 1
+            td John
+            td Doe
+            td jdoe@gmail.com
+          tr
+            th(scope='row') 2
+            td Will
+            td Johnson
+            td will@yahoo.com
+          tr
+            th(scope='row') 3
+            td Shannon
+            td Williams
+            td shannon@yahoo.com
+      br
+      // BORDERLESS TABLE
+      table.table.table-borderless
+        thead
+          tr
+            th #
+            th First Name
+            th Last Name
+            th Email
+        tbody
+          tr
+            th(scope='row') 1
+            td John
+            td Doe
+            td jdoe@gmail.com
+          tr
+            th(scope='row') 2
+            td Will
+            td Johnson
+            td will@yahoo.com
+          tr
+            th(scope='row') 3
+            td Shannon
+            td Williams
+            td shannon@yahoo.com
+      br
+      // HOVERABLE
+      table.table.table-hover
+        thead
+          tr
+            th #
+            th First Name
+            th Last Name
+            th Email
+        tbody
+          tr
+            th(scope='row') 1
+            td John
+            td Doe
+            td jdoe@gmail.com
+          tr
+            th(scope='row') 2
+            td Will
+            td Johnson
+            td will@yahoo.com
+          tr
+            th(scope='row') 3
+            td Shannon
+            td Williams
+            td shannon@yahoo.com
+      br
+      // CONTEXTUAL CLASSES
+      table.table
+        thead
+          tr
+            th #
+            th First Name
+            th Last Name
+            th Email
+        tbody
+          tr.table-success
+            th(scope='row') 1
+            td John
+            td Doe
+            td jdoe@gmail.com
+          tr.table-danger
+            th(scope='row') 2
+            td Will
+            td Johnson
+            td will@yahoo.com
+          tr.table-warning
+            th(scope='row') 3
+            td Shannon
+            td Williams
+            td shannon@yahoo.com
+      br
+      // SMALL TABLE
+      table.table.table-sm.table-hover.table-striped
+        thead
+          tr
+            th #
+            th First Name
+            th Last Name
+            th Email
+        tbody
+          tr
+            th(scope='row') 1
+            td John
+            td Doe
+            td jdoe@gmail.com
+          tr
+            th(scope='row') 2
+            td Will
+            td Johnson
+            td will@yahoo.com
+          tr
+            th(scope='row') 3
+            td Shannon
+            td Williams
+            td shannon@yahoo.com
+      br
+      // RESPONSIVE TABLE - Scrollbars
+      .table-responsive
+        table.table
+          thead
+            tr
+              th #
+              th First Name
+              th Last Name
+              th Email
+          tbody
+            tr
+              th(scope='row') 1
+              td John
+              td Doe
+              td jdoe@gmail.com
+            tr
+              th(scope='row') 2
+              td Will
+              td Johnson
+              td will@yahoo.com
+            tr
+              th(scope='row') 3
+              td Shannon
+              td Williams
+              td shannon@yahoo.com
+      br
+      br
+      // PAGINATION
+      nav
+        ul.pagination
+          li.page-item.disabled
+            a.page-link(href='#') Previous
+          li.page-item.active
+            a.page-link(href='#') 1
+          li.page-item
+            a.page-link(href='#') 2
+          li.page-item
+            a.page-link(href='#') 3
+          li.page-item
+            a.page-link(href='#') Next
+      // PAGINATION CENTERED
+      nav
+        ul.pagination.justify-content-center
+          li.page-item.disabled
+            a.page-link(href='#') Previous
+          li.page-item.active
+            a.page-link(href='#') 1
+          li.page-item
+            a.page-link(href='#') 2
+          li.page-item
+            a.page-link(href='#') 3
+          li.page-item
+            a.page-link(href='#') Next
+      // PAGINATION RIGHT
+      nav
+        ul.pagination.justify-content-end
+          li.page-item.disabled
+            a.page-link(href='#') Previous
+          li.page-item.active
+            a.page-link(href='#') 1
+          li.page-item
+            a.page-link(href='#') 2
+          li.page-item
+            a.page-link(href='#') 3
+          li.page-item
+            a.page-link(href='#') Next
+      // PAGINATION LARGE
+      nav
+        ul.pagination.pagination-lg
+          li.page-item.disabled
+            a.page-link(href='#') Previous
+          li.page-item.active
+            a.page-link(href='#') 1
+          li.page-item
+            a.page-link(href='#') 2
+          li.page-item
+            a.page-link(href='#') 3
+          li.page-item
+            a.page-link(href='#') Next
+      // PAGINATION SMALL
+      nav
+        ul.pagination.pagination-sm
+          li.page-item.disabled
+            a.page-link(href='#') Previous
+          li.page-item.active
+            a.page-link(href='#') 1
+          li.page-item
+            a.page-link(href='#') 2
+          li.page-item
+            a.page-link(href='#') 3
+          li.page-item
+            a.page-link(href='#') Next
+      // WITH ARROWS
+      nav
+        ul.pagination
+          li.page-item.disabled
+            a.page-link(href='#')
+              span «
+              span.sr-only Previous
+          li.page-item.active
+            a.page-link(href='#') 1
+          li.page-item
+            a.page-link(href='#') 2
+          li.page-item
+            a.page-link(href='#') 3
+          li.page-item
+            a.page-link(href='#')
+              span »
+              span.sr-only Next
+
+    div(style="margin-top:500px;")

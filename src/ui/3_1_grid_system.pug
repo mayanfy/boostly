@@ -1,0 +1,83 @@
+- var title = 'Grid & Flexbox';
+- var subtitle = 'Grid system';
+
+doctype html
+html(lang="en")
+  
+  include includes/header.pug
+
+  body
+    
+    //- Header
+    include includes/title-details.pug
+
+    .container
+      // RESPONSIVE GRID
+      .row
+        .col-sm-6.col-md-8.col-lg-9.col-xl-10(style='border:1px solid #333')
+          ul
+            li 6 column on small screens
+            li 8 column on medium screen
+            li 9 column on large screen
+            li 10 column on xlarge screen
+        .col-sm-6.col-md-4.col-lg-3.col-xl-2(style='border:1px solid #333')
+          ul
+            li 6 column on small screens
+            li 4 column on medium screen
+            li 3 column on large screen
+            li 2 column on xlarge screen
+      // EQUAL WIDTH
+      .row
+        .col(style='border:1px solid #333') Equal Width
+        .col(style='border:1px solid #333') Equal Width
+        .col(style='border:1px solid #333') Equal Width
+        .col(style='border:1px solid #333') Equal Width
+      // EQUAL WIDTH MULTI ROW
+      .row
+        .col(style='border:1px solid #333') Equal Width Multi
+        .col(style='border:1px solid #333') Equal Width Multi
+        .w-100(style='border:1px solid #333')
+        .col(style='border:1px solid #333') Equal Width Multi
+        .col(style='border:1px solid #333') Equal Width Multi
+      // AUTO LAYOUT
+      .row
+        .col(style='border:1px solid #333') Auto Layout
+        .col-6(style='border:1px solid #333') Auto Layout
+        .col-4(style='border:1px solid #333') Auto Layout
+      // EQUAL WIDTH STACKED
+      .row
+        .col-sm(style='border:1px solid #333') Equal Width Stack
+        .col-sm(style='border:1px solid #333') Equal Width Stack
+        .col-sm(style='border:1px solid #333') Equal Width Stack
+      // ORDERING
+      .row
+        .col.order-3(style='border:1px solid #333')
+          | First
+        .col.order-2(style='border:1px solid #333')
+          | Second
+        .col.order-1(style='border:1px solid #333')
+          | Third
+      // OFFSETTING
+      .row
+        // 6 column div offset by 3
+        .col-md-6.offset-md-3(style='border:1px solid #333') .col-md-6 .offset-md-3
+      .row
+        // 2 4 column divs, the second offset by 4
+        .col-md-4(style='border:1px solid #333') .col-md-4
+        .col-md-4.offset-md-4(style='border:1px solid #333') .col-md-4 .offset-md-4
+      .row
+        // 2 3 column divs, both offset by 3
+        .col-md-3.offset-md-3(style='border:1px solid #333') .col-md-3 .offset-md-3
+        .col-md-3.offset-md-3(style='border:1px solid #333') .col-md-3 .offset-md-3
+      // NESTING
+      .row
+        .col-sm-9(style='border:1px solid blue')
+          | Level 1: .col-sm-9
+          .row
+            .col-8.col-sm-6(style='border:1px solid red')
+              | Level 2: .col-8 .col-sm-6
+            .col-4.col-sm-6(style='border:1px solid red')
+              | Level 2: .col-4 .col-sm-6
+
+    div(style="margin-top:500px;")
+    

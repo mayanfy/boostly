@@ -1,0 +1,121 @@
+- var title = 'Grid & Flexbox';
+- var subtitle = 'Flexbox';
+
+doctype html
+html(lang="en")
+  
+  include includes/header.pug
+
+  body
+    
+    //- Header
+    include includes/title-details.pug
+
+    .container
+      // FLEX ROW & FLEX ITEMS
+      .d-flex.flex-row.row-hl
+        .p-4.item-hl Flex Item
+        .p-4.item-hl Flex Item
+        .p-4.item-hl Flex Item
+      br
+      br
+      // FLEX ROW REVERSE
+      .d-flex.flex-row-reverse.row-hl
+        .p-4.item-hl Flex Item
+        .p-4.item-hl Flex Item
+        .p-4.item-hl Flex Item
+      br
+      br
+      // JUSTIFY CONTENT - CONTENT START
+      .d-flex.justify-content-start.row-hl
+        .p-4.item-hl Flex Item
+        .p-4.item-hl Flex Item
+        .p-4.item-hl Flex Item
+      br
+      br
+      // JUSTIFY CONTENT - CONTENT CENTER
+      .d-flex.justify-content-center.row-hl
+        .p-4.item-hl Flex Item
+        .p-4.item-hl Flex Item
+        .p-4.item-hl Flex Item
+      br
+      br
+      // JUSTIFY CONTENT - CONTENT END
+      .d-flex.justify-content-end.row-hl
+        .p-4.item-hl Flex Item
+        .p-4.item-hl Flex Item
+        .p-4.item-hl Flex Item
+      br
+      br
+      // JUSTIFY CONTENT - CONTENT AROUND
+      .d-flex.justify-content-around.row-hl
+        .p-4.item-hl Flex Item
+        .p-4.item-hl Flex Item
+        .p-4.item-hl Flex Item
+      br
+      br
+      // JUSTIFY CONTENT - CONTENT BETWEEN
+      .d-flex.justify-content-between.row-hl
+        .p-4.item-hl Flex Item
+        .p-4.item-hl Flex Item
+        .p-4.item-hl Flex Item
+      br
+      br
+      // FLEX COLUMN
+      .d-flex.flex-column.row-hl
+        .p-4.item-hl Flex Item
+        .p-4.item-hl Flex Item
+        .p-4.item-hl Flex Item
+      br
+      br
+      // FLEX COLUMN REVERSE
+      .d-flex.flex-column-reverse.row-hl
+        .p-4.item-hl Flex Item
+        .p-4.item-hl Flex Item
+        .p-4.item-hl Flex Item
+      br
+      br
+      // VERTICAL ALIGN ITEMS - START
+      .d-flex.align-items-start.row-hl
+        .p-4.item-hl Flex Item
+        .p-4.item-hl Flex Item
+        .p-4.item-hl Flex Item
+      br
+      br
+      // VERTICAL ALIGN ITEMS - CENTER
+      .d-flex.align-items-center.row-hl
+        .p-4.item-hl Flex Item
+        .p-4.item-hl Flex Item
+        .p-4.item-hl Flex Item
+      br
+      br
+      // VERTICAL ALIGN ITEMS - END
+      .d-flex.align-items-end.row-hl
+        .p-4.item-hl Flex Item
+        .p-4.item-hl Flex Item
+        .p-4.item-hl Flex Item
+      br
+      br
+      // VERTICAL ALIGN ITEMS - BASELINE
+      .d-flex.align-items-baseline.row-hl
+        .p-4.item-hl Flex Item
+        .p-4.item-hl Flex Item
+        .p-4.item-hl Flex Item
+      br
+      br
+      // VERTICAL ALIGN ITEMS - STRETCH
+      .d-flex.align-items-stretch.row-hl
+        .p-4.item-hl Flex Item
+        .p-4.item-hl Flex Item
+        .p-4.item-hl Flex Item
+      br
+      br
+      // ALIGN SELF
+      .d-flex.row-hl
+        .align-self-start.p-4.item-hl Flex Item
+        .align-self-center.p-4.item-hl Flex Item
+        .align-self-end.p-4.item-hl Flex Item
+        .align-self-baseline.p-4.item-hl Flex Item
+        .align-self-stretch.p-4.item-hl Flex Item
+
+    div(style="margin-top:500px;")

@@ -1,0 +1,39 @@
+- var title = 'JavaScript Widgets';
+- var subtitle = 'Popovers';
+
+doctype html
+html(lang="en")
+  
+  include includes/header.pug
+
+  body
+    
+    //- Header
+    include includes/title-details.pug
+
+    //- Body
+    .container
+      // POPOVER
+      button.btn.btn-danger(data-toggle='popover', data-placement='top', data-content='Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, inventore.\
+      Toggle popover')
+        | Toggle Popover
+      button.btn.btn-primary(data-toggle='popover', data-placement='right', data-content='Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, inventore.\
+      Toggle popover')
+        | Toggle popover
+      button.btn.btn-warning(data-toggle='popover', data-placement='bottom', data-content='Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, inventore.\
+      Toggle popover')
+        | Toggle popover
+      button.btn.btn-info(data-toggle='popover', data-placement='left', data-content='Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, inventore.\
+      Toggle popover')
+        | Toggle popover
+      br
+      br
+      // DISMISSIBLE POPOVER
+      button#hello.btn.btn-primary(data-toggle='popover', data-placement='left', data-content='Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, inventore.\
+      Toggle popover', data-trigger='focus')
+        | Toggle popover
+      hr
+      // CONTROL WITH JS
+      button.btn.btn-secondary(onclick='showPopover()') Show Popover
+      button.btn.btn-secondary(onclick='hidePopover()') Hide Popover
+      button.btn.btn-secondary(onclick='togglePopover()') Toggle Popover
