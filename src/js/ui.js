@@ -12,7 +12,7 @@ $('#main-nav a').on('click', function (e) {
     e.preventDefault();
 
     // Store hash
-    const hash = this.hash;
+    var hash = this.hash;
 
     // Animate smooth scroll
     $('html, body').animate({
