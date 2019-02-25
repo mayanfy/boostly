@@ -7,9 +7,5 @@ $font-family-sans-serif: 'Roboto', sans-serif !default;
 //- Get framework boostrap
 @import "~bootstrap/scss/bootstrap";
 
-//- Icons Font awesome v4.7
-$fa-font-path: '~font-awesome/fonts';
-@import '~font-awesome/scss/font-awesome';
-
 // Custom class for UI KIT
 @import './_ui.scss'
