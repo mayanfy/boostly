@@ -1,6 +1,3 @@
-// Import $ for use JQuery
-import $ from 'jquery';
-
 // Scrollspy menu bootstrap
 $('body').scrollspy({ target: '#main-nav' });
 

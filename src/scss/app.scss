@@ -11,15 +11,5 @@ $font-family-sans-serif: 'Roboto', sans-serif !default;
 $fa-font-path: '~font-awesome/fonts';
 @import '~font-awesome/scss/font-awesome';
 
-//- Icons Material icons
-$mdi-font-path: "~@mdi/font/fonts" !default;
-@import '~@mdi/font/scss/materialdesignicons';
-
-//- Transition efects
-@import '~aos/src/sass/aos';
-
-//- Hamburguer menu
-@import '~hamburgers/_sass/hamburgers/hamburgers';
-
 // Custom class for UI KIT
 @import './_ui.scss'

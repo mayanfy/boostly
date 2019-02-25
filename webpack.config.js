@@ -2,6 +2,7 @@
 const path = require('path');
 const merge = require('webpack-merge');
 const UiConfig = require('./uiconfig');
+const externals = require('./externals');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
@@ -10,11 +11,13 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const config = {
 
-    entry: './src/app.js',
-
+    entry: {
+        bundle: './src/app.js',
+        ui: './src/js/ui.js'
+    },
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'js/bundle.js'
+        filename: 'js/[name].js'
     },
     devServer: {
         contentBase: path.join(__dirname, 'dist'),
@@ -115,4 +118,4 @@ const config = {
     }
 };
 
-module.exports = merge(config,UiConfig);
+module.exports = merge(config,UiConfig,externals);
